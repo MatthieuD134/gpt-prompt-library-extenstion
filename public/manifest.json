@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "GPT Prompts Library",
+  "version": "0.1.0",
+  "description": "An Extendable library of prompts for ChatGPT In a Browser Extension",
+  "action": {
+    "default_popup": "index.html"
+  },
+  "permissions": []
+}
