@@ -1,12 +1,12 @@
 export default {
   tabWidth: 2,
   printWidth: 100,
-  endOfLine: "auto",
-  arrowParens: "always",
-  trailingComma: "all",
+  endOfLine: 'auto',
+  arrowParens: 'always',
+  trailingComma: 'all',
   semi: true,
   useTabs: false,
-  singleQuote: false,
+  singleQuote: true,
   bracketSpacing: true,
-  plugins: ["prettier-plugin-tailwindcss"],
+  plugins: ['prettier-plugin-tailwindcss'],
 };

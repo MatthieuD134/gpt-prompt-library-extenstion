@@ -2,8 +2,8 @@ export default {
     // This will lint and format Typescript and Javascript files
     // Runs linter first and then run prettier to format the files
     '**/*.(ts|tsx|js|jsx)': (filenames) => [
-      `npx eslint --fix ${filenames.map((file) => `"${file}"`).join(' ')}`,
-      `npx prettier --write ${filenames.map((file) => `"${file}"`).join(' ')}`,
+      'npx eslint --fix ' + filenames.map((file) => `"${file}"`).join(' '),
+      'npx prettier --write ' + filenames.map((file) => `"${file}"`).join(' '),
     ],
 
     // This will Format MarkDown and JSON files

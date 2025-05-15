@@ -1,8 +1,8 @@
-import path from "path";
-import tailwindcss from "@tailwindcss/vite";
-import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react-swc";
-import { viteStaticCopy } from "vite-plugin-static-copy";
+import tailwindcss from '@tailwindcss/vite';
+import react from '@vitejs/plugin-react-swc';
+import path from 'path';
+import { defineConfig } from 'vite';
+import { viteStaticCopy } from 'vite-plugin-static-copy';
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -12,22 +12,22 @@ export default defineConfig({
     viteStaticCopy({
       targets: [
         {
-          src: "public/manifest.json",
-          dest: ".",
+          src: 'public/manifest.json',
+          dest: '.',
         },
       ],
     }),
   ],
   resolve: {
     alias: {
-      "@": path.resolve(__dirname, "src"),
+      '@': path.resolve(__dirname, 'src'),
     },
   },
   build: {
-    outDir: "dist",
+    outDir: 'dist',
     rollupOptions: {
       input: {
-        main: "./index.html",
+        main: './index.html',
       },
     },
   },
